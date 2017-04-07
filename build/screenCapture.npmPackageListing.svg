@@ -1,31 +1,31 @@
 <svg height="446" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="446" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-07 04:15:04 +0000    61728 byte  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-07 04:15:04 +0000     1088 byte  LICENSE</tspan>
-<tspan x="10" y="58">  2.  2017-04-07 04:15:04 +0000     7718 byte  README.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-07 04:15:04 +0000       47 byte  bin/jscpd</tspan>
-<tspan x="10" y="90">  4.  2017-04-07 04:15:04 +0000    11911 byte  changelog.md</tspan>
-<tspan x="10" y="106">  5.  2017-04-07 04:15:04 +0000     2447 byte  coffeelint.json</tspan>
-<tspan x="10" y="122">  6.  2017-04-07 04:15:04 +0000       70 byte  index.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-07 04:15:04 +0000     1865 byte  lib/cli/cli.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-07 04:15:04 +0000     2172 byte  lib/clone.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-07 04:15:04 +0000      756 byte  lib/detector.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-07 04:15:04 +0000     2927 byte  lib/jscpd.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-07 04:15:04 +0000     1189 byte  lib/map.js</tspan>
-<tspan x="10" y="218"> 12.  2017-04-07 04:15:04 +0000      970 byte  lib/preprocessors/debug.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-07 04:15:04 +0000     1783 byte  lib/preprocessors/files.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-07 04:15:04 +0000     2919 byte  lib/preprocessors/options.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-07 04:15:04 +0000     1723 byte  lib/report.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-07 04:15:04 +0000     3034 byte  lib/reporters/_std-log.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-07 04:15:04 +0000     1067 byte  lib/reporters/json.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-07 04:15:04 +0000     1367 byte  lib/reporters/xml-pmd.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-07 04:15:04 +0000      856 byte  lib/storage/StorageMemory.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-07 04:15:04 +0000     3206 byte  lib/strategy.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-07 04:15:04 +0000     1548 byte  lib/tokenizer/TokenizerBase.js</tspan>
-<tspan x="10" y="378"> 22.  2017-04-07 04:15:04 +0000     3497 byte  lib/tokenizer/TokenizerCodeMirror.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-07 04:15:04 +0000     2744 byte  lib/tokenizer/TokenizerFactory.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-07 04:15:04 +0000     3601 byte  package.json</tspan>
-<tspan x="10" y="426"> 25.  2017-04-07 04:15:04 +0000     1223 byte  reporters-xslt/simple.xsl</tspan>
+<tspan x="10" y="26">  0.  2017-04-07 04:16:40 +0000    61728 byte  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-07 04:16:40 +0000     1088 byte  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-07 04:16:40 +0000     7718 byte  README.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-07 04:16:40 +0000       47 byte  bin/jscpd</tspan>
+<tspan x="10" y="90">  4.  2017-04-07 04:16:40 +0000    11911 byte  changelog.md</tspan>
+<tspan x="10" y="106">  5.  2017-04-07 04:16:40 +0000     2447 byte  coffeelint.json</tspan>
+<tspan x="10" y="122">  6.  2017-04-07 04:16:40 +0000       70 byte  index.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-07 04:16:40 +0000     1865 byte  lib/cli/cli.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-07 04:16:40 +0000     2172 byte  lib/clone.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-07 04:16:40 +0000      756 byte  lib/detector.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-07 04:16:40 +0000     2927 byte  lib/jscpd.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-07 04:16:40 +0000     1189 byte  lib/map.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-07 04:16:40 +0000      970 byte  lib/preprocessors/debug.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-07 04:16:40 +0000     1783 byte  lib/preprocessors/files.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-07 04:16:40 +0000     2919 byte  lib/preprocessors/options.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-07 04:16:40 +0000     1723 byte  lib/report.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-07 04:16:40 +0000     3034 byte  lib/reporters/_std-log.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-07 04:16:40 +0000     1067 byte  lib/reporters/json.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-07 04:16:40 +0000     1367 byte  lib/reporters/xml-pmd.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-07 04:16:40 +0000      856 byte  lib/storage/StorageMemory.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-07 04:16:40 +0000     3206 byte  lib/strategy.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-07 04:16:40 +0000     1548 byte  lib/tokenizer/TokenizerBase.js</tspan>
+<tspan x="10" y="378"> 22.  2017-04-07 04:16:40 +0000     3497 byte  lib/tokenizer/TokenizerCodeMirror.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-07 04:16:40 +0000     2744 byte  lib/tokenizer/TokenizerFactory.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-07 04:16:40 +0000     3601 byte  package.json</tspan>
+<tspan x="10" y="426"> 25.  2017-04-07 04:16:40 +0000     1223 byte  reporters-xslt/simple.xsl</tspan>
 </text>
 </svg>
