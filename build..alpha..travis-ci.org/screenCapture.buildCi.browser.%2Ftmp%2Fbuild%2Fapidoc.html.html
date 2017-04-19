@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/kucherenko/jscpd#readme"
-
-    >jscpd (v0.6.11)</a>
+    <a href="https://github.com/kucherenko/jscpd#readme">jscpd (v0.6.11)</a>
 </h1>
 <h4>Copy/paste detector for programming code, support JavaScript, CoffeeScript, PHP, Ruby, Python, Less, Go, Java, Yaml, C#, C++, C, Puppet, Twig languages</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.jscpd">module jscpd</a><ol>
 
@@ -369,12 +362,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">execPreProcessors = function (list) {
   var i, len, preProcessor;
-  logger.profile(&#x27;Preprocessors running time:&#x27;);
-  for (i = 0, len = list.length; i &#x3c; len; i++) {
+  logger.profile('Preprocessors running time:');
+  for (i = 0, len = list.length; i &lt; len; i++) {
     preProcessor = list[i];
     preProcessor(this);
   }
-  return logger.profile(&#x27;Preprocessors running time:&#x27;);
+  return logger.profile('Preprocessors running time:');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -393,23 +386,23 @@
   this.options = options;
   this.execPreProcessors(this.preProcessors);
   if (!this.options.debug) {
-    logger.profile(&#x27;Scanning for duplicates time:&#x27;);
+    logger.profile('Scanning for duplicates time:');
     if (this.options.selectedFiles.length) {
-      logger.info(&#x22;Scanning &#x22; + this.options.selectedFiles.length + &#x22; files for duplicates...&#x22;);
+      logger.info("Scanning " + this.options.selectedFiles.length + " files for duplicates...");
     }
     strategy = new Strategy(this.options);
     detector = new Detector(strategy);
     report = new Report(this.options);
-    codeMap = detector.start(this.options.selectedFiles, this.options[&#x27;min-lines&#x27;], this.options[&#x27;min-tokens&#x27;]);
-    logger.profile(&#x27;Scanning for duplicates time:&#x27;);
-    logger.info(&#x27;Scanning... done!\n&#x27;);
-    logger.profile(&#x27;Generate report time:&#x27;);
-    logger.info(&#x27;Start report generation...\n&#x27;);
+    codeMap = detector.start(this.options.selectedFiles, this.options['min-lines'], this.options['min-tokens']);
+    logger.profile('Scanning for duplicates time:');
+    logger.info('Scanning... done!\n');
+    logger.profile('Generate report time:');
+    logger.info('Start report generation...\n');
     generateReport = (function(_this) {
       return function() {
         var reportResult;
         reportResult = report.generate(codeMap);
-        logger.profile(&#x27;Generate report time:&#x27;);
+        logger.profile('Generate report time:');
         _this.report = reportResult;
         _this.map = codeMap;
         return {
@@ -423,7 +416,7 @@
         var i, len, ref, results;
         ref = codeMap.clones;
         results = [];
-        for (i = 0, len = ref.length; i &#x3c; len; i++) {
+        for (i = 0, len = ref.length; i &lt; len; i++) {
           clone = ref[i];
           results.push(clone.blame());
         }
@@ -460,15 +453,15 @@
   if (jscpd.options.config != null) {
     config = readConfig(jscpd.options.config);
     if (!config) {
-      throw new Error(&#x22;JSCPD Error 02: can&#x27;t read config file &#x22; + jscpd.options.config);
+      throw new Error("JSCPD Error 02: can't read config file " + jscpd.options.config);
     }
     process.chdir(path.dirname(jscpd.options.config));
   } else {
-    config = readConfig(&#x27;.cpd.yaml&#x27;) || readConfig(&#x27;.cpd.yml&#x27;) || {};
+    config = readConfig('.cpd.yaml') || readConfig('.cpd.yml') || {};
   }
   options = prepareOptions(jscpd.options, config);
-  if (!path.isAbsolute(options.path || &#x27;&#x27;)) {
-    options.path = path.resolve(process.cwd(), options.path || &#x27;&#x27;);
+  if (!path.isAbsolute(options.path || '')) {
+    options.path = path.resolve(process.cwd(), options.path || '');
   }
   return jscpd.options = options;
 }</pre></li>
@@ -503,24 +496,24 @@
     <li>description and source-code<pre class="apidocCodePre">2 = function (jscpd) {
   var file, i, len, name, option, ref, ref1;
   if (jscpd.options.debug) {
-    logger.info(&#x27;----------------------------------------&#x27;);
-    logger.info(&#x27;Options:&#x27;);
+    logger.info('----------------------------------------');
+    logger.info('Options:');
     ref = jscpd.options;
     for (name in ref) {
       option = ref[name];
-      if (name !== &#x27;selectedFiles&#x27;) {
-        logger.info(name + &#x22; = &#x22; + option);
+      if (name !== 'selectedFiles') {
+        logger.info(name + " = " + option);
       }
     }
-    logger.info(&#x27;----------------------------------------&#x27;);
-    logger.info(&#x27;Files:&#x27;);
+    logger.info('----------------------------------------');
+    logger.info('Files:');
     ref1 = jscpd.options.selectedFiles;
-    for (i = 0, len = ref1.length; i &#x3c; len; i++) {
+    for (i = 0, len = ref1.length; i &lt; len; i++) {
       file = ref1[i];
       logger.info(file);
     }
-    logger.info(&#x27;----------------------------------------&#x27;);
-    return logger.info(&#x27;Run without debug option for start detection process&#x27;);
+    logger.info('----------------------------------------');
+    return logger.info('Run without debug option for start detection process');
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -569,17 +562,17 @@
   this.options = options;
   reporter = this.options.reporter;
   if (this.options.output) {
-    ext = this.options.output.split(&#x27;.&#x27;).pop();
+    ext = this.options.output.split('.').pop();
   }
-  if (ext === &#x27;xml&#x27; &#x26;&#x26; reporter === &#x27;json&#x27; || ext === &#x27;json&#x27; &#x26;&#x26; reporter === &#x27;xml&#x27;) {
-    logger.warn(&#x22;output file extention &#x27;&#x22; + this.options.output + &#x22;&#x27; does not match reporter &#x27;&#x22; + reporter + &#x22;&#x27;&#x22;);
+  if (ext === 'xml' &amp;&amp; reporter === 'json' || ext === 'json' &amp;&amp; reporter === 'xml') {
+    logger.warn("output file extention '" + this.options.output + "' does not match reporter '" + reporter + "'");
   }
   switch (reporter) {
-    case &#x27;xml&#x27;:
-      reporter = &#x27;./reporters/xml-pmd&#x27;;
+    case 'xml':
+      reporter = './reporters/xml-pmd';
       break;
-    case &#x27;json&#x27;:
-      reporter = &#x27;./reporters/json&#x27;;
+    case 'json':
+      reporter = './reporters/json';
       break;
     default:
       cwd = process.cwd();
@@ -590,7 +583,7 @@
       }
   }
   this.reporter = require(reporter);
-  this.stdReporter = require(&#x27;./reporters/_std-log&#x27;);
+  this.stdReporter = require('./reporters/_std-log');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -626,3 +619,4 @@
     ]
 </div>
 </div>
+</body></html>
