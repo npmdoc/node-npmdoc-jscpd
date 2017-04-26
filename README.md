@@ -1,6 +1,6 @@
 # npmdoc-jscpd
 
-#### api documentation for  [jscpd (v0.6.11)](https://github.com/kucherenko/jscpd#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jscpd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jscpd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jscpd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jscpd)
+#### basic api documentation for  [jscpd (v0.6.11)](https://github.com/kucherenko/jscpd#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jscpd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jscpd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jscpd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jscpd)
 
 #### Copy/paste detector for programming code, support JavaScript, CoffeeScript, PHP, Ruby, Python, Less, Go, Java, Yaml, C#, C++, C, Puppet, Twig languages
 
